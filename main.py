@@ -50,11 +50,11 @@ if __name__ == "__main__":
     serviceId = get_serviceId_from_args()
     if serviceId:
         ports = scan_ports()
-
+        
         services = get_running_services()
         print("Running Services:")
         print(services)
 
-        send_to_backend(services,serviceId, url="http://127.0.0.1:3000/user/service/technologies")
+        send_to_backend(services,serviceId, url="http://20.64.237.199:4000/user/service/technologies")
     else:
         print("No serviceId provided.")
